@@ -1,0 +1,35 @@
+.mkp-image-bg {
+  max-width: 600px;
+}
+
+
+.container-float{
+  position: relative;
+  margin-bottom: 100px;
+  @include md {
+    margin-bottom: 50px;
+  }
+}
+.img-float {
+  position: absolute;
+  max-width: 100px;
+}
+.float-1{
+  right: 0;
+}
+.float-2 {
+  top: 15px;
+  @include md {
+    top: 50px;
+  }
+}
+.float-3 {
+  display: none;
+  @include md {
+    display: initial;
+    max-width: 80px;
+    top: 230px;
+    right: 50%;
+  }
+
+}

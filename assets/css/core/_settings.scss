@@ -1,0 +1,104 @@
+
+	//font-family
+	@font-face {
+		font-family: 'Sancoale';
+		src: url(assets/fonts/Sancoale%20Medium.ttf) format('truetype');
+	}
+
+	@font-face {
+		font-family: 'SancoaleBold';
+		src: url(assets/fonts/Sancoale%20Bold.ttf) format('truetype');
+	}
+
+		@font-face {
+			font-family: 'SancoaleRegular';
+			src: url(assets/fonts/Sancoale%20Regular.ttf) format('truetype');
+		}
+
+
+	$main: 'Sancoale', sans-serif;
+	$bold: 'SancoaleBold', sans-serif;
+	$regular: 'SancoaleRegular', sans-serif;
+
+
+	$second-font: 'Helvetica', sans-serif;
+	$blog-font: 'Amiri', serif;
+	// $second-font: 'Dosis', sans-serif;
+
+//color font
+$font-color: black;
+$background-color: #F8FAFD;
+$white: #FFF;
+$background-footer-copy: #E6EFFA;
+$color-blog: rgba(0, 0, 0, .84);
+
+//colors
+$blue: #00B3C9;
+$deep-blue: #003570;
+$white: #F1F1F1;
+$gray: #6D6E71;
+$gray-form: rgb(229,231,232);
+$black: #231F20;
+$gray: #F3F3F3;
+$yellow: #FFC90C;
+$purple: #AF2390;
+
+
+//mkp font-size Blog
+$p-blog: 21px;
+$p-blog-mobile: 18px;
+$h2-blog: 44px;
+$h3-blog: 34px;
+
+//mkp conatiner width
+$max-display-width: 1400px;
+
+
+//BreakPoints Media queries
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// Custom devices
+@mixin cust($screen) {
+	@media (min-width: $screen+'px') {
+		@content;
+	}
+}

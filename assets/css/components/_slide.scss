@@ -1,0 +1,46 @@
+.mkp-slide  {
+  max-width: 350px;
+  padding: 0 20px;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+    font-size: 28px;
+  }
+  @include md {
+    margin: 5px;
+  }
+}
+
+.slide-item-img{
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.slide-recamara {
+	background: $purple;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.slide-cocina {
+	background: $deep-blue;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.slick-arrow {
+	background-color: $deep-blue;
+  border-radius: 50%;
+}
+
+.slick-next:hover {
+  background: $blue;
+}
+
+.slick-prev:hover {
+	background: $blue;
+}
+
+.slide-item-text {
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+.mkp-section-gracias {
+  text-emphasis: center;
+  height: 100vh;
+  .container {
+    text-align: center;
+  }
+  .mkp-gracias-logo {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba($color: #fff, $alpha: .8);
+  }
+}
+
+.mkp-footer-gracias {
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,78 @@
+// COLORS
+
+.is-white {
+	color: $white;
+}
+
+.is-blue {
+	color: $blue;
+}
+
+.is-deepblue {
+	color: $deep-blue;
+}
+
+.is-gray {
+	color: $gray;
+}
+
+.is-black {
+	color: $black;
+}
+
+
+.is-yellow {
+	color: $yellow;
+}
+
+.is-purple {
+	color: $purple;
+}
+
+
+// text
+
+.is-center {
+  text-align: center;
+}
+
+.is-bold {
+  font-weight: 700;
+	font-family: $bold;
+}
+
+.is-normal {
+	font-family: $regular;
+	font-weight: 400;
+}
+
+.is-semibold{
+	font-family: $main;
+}
+
+// Displays
+
+.mkp-flex {
+  display: flex;
+}
+
+.is-capitalize{
+	text-transform: capitalize;
+}
+
+.is-uppercase{
+	text-transform: uppercase;
+}
+
+.text-shadow {
+	color: white;
+	text-shadow: 3px -2px 0px $purple,
+	-3px -2px 0px $purple,
+	3px 2px 0px $purple,
+	3px 4px 0px $purple,
+	-3px 4px 0px $purple;
+	// text-shadow: -5px 0 $purple,
+	// 0 5px $purple,
+	// 4px 0 $purple,
+	// 0 -4px $purple;
+}

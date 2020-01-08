@@ -1,0 +1,39 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+  font-family: $main;
+  color: $font-color;
+  background: $background-color;
+  margin: 0;
+  background: linear-gradient(-30deg, #F3F3F3 0, #F3F3F3 16%, #fff 16%, #fff 33%, #AF2390 33%, #AF2390 50%, #00B1C7 50%, #00B1C7 67%, #fff 67%, #fff 84%, #FFC90C 84%, #FFC90C 100%);
+}
+
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $bold;
+}
+
+p, ul, a, li, span{
+  font-family: $main;
+}
+
+a {
+  color:$font-color;
+  text-decoration: none;
+}
+
+
+//WP CUSTOM
+

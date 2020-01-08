@@ -1,0 +1,402 @@
+.mkp-header{
+  &__text{
+    max-width: 500px;
+    &__title {
+      text-align: center;
+      h1{
+        font-size: 65px;
+        line-height: .8;
+        // text-shadow: 1px 3px 1px $white;
+        text-shadow: -3px 0 $white,
+        0 3px $white,
+        3px 0 $white,
+        0 -3px $white;
+      }
+      span {
+        margin: 0;
+        font-size: 48px;
+      }
+
+    }
+    &__subtitle {
+      font-size: 25px;
+      text-align: center;
+      ul {
+        margin: 0 auto;
+        padding: 0;
+      }
+      li {
+        display: inline;
+        font-weight: 300;
+      }
+      li::before {
+        content: "\2022";
+        /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        font-weight: bold;
+        /* If you want it to be bold */
+        display: inline-block;
+        /* Needed to add space between the bullet and the text */
+        width: 1em;
+        /* Also needed for space (tweak if needed) */
+      }
+    }
+  }
+  .form__logo {
+    max-width: 350px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  @include md {
+    margin-top: 0;
+    .flex {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+}
+
+
+.mkp-recamara{
+  .mkp-title {
+  	text-align: center;
+    @include md {
+      max-width: 300px;
+      text-align: left;
+      font-size: 25px;
+    }
+  }
+
+
+  @include md {
+  	.mkp-d-flex {
+  		display: flex;
+  		justify-content: space-between;
+      align-items: flex-start;
+  	}
+  }
+}
+
+ @include md {
+ 	.mkp-d-flex {
+ 		display: flex;
+ 		justify-content: space-between;
+     align-items: center;
+ 	}
+ }
+
+
+.mkp-sucursal-container {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.mkp-sucursales {
+  .mkp-title {
+    font-size: 22px;
+    color: $deep-blue;
+  }
+}
+
+.mkp-sucursal {
+  width: 50%;
+}
+
+.mkp-sucursal__title {
+  margin: 0 auto;
+  max-width: 200px;
+  font-size: 24px;
+  background: $deep-blue;
+  color: $white;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+.mkp-sucursal__description {
+  font-size: 20p;
+}
+
+.mkp-suscribe {
+  &__logo {
+    max-width: 100px;
+    padding: 10px;
+  }
+  &__text {
+    font-size: 35px;
+    color: $blue;
+    padding: 10px;
+  }
+  @include md {
+    .mkp-flex-md {
+    	display: flex;
+    	justify-content: space-around;
+  }
+  }
+  .mkp-container-logo-text {
+    display: flex;
+    align-items: center;
+    // max-width: 800px;
+  }
+}
+
+
+.mkp-hero-section {
+	background-image: url('assets/img/hero-kids-dgr.png');
+  background-size: cover;
+  background-position: center;
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mkp-hero {
+  max-width: 1400px;
+  &__text {
+    &__logo {
+      width: 160px;
+      margin: 0 auto;
+      padding-top: 20px;
+      @include lg {
+        width: 220px;
+        position: absolute;
+        left: 25%;
+      }
+    }
+    &__text {
+      .titulo div{
+        font-size:20px;
+        background-color: $blue;
+        padding: 0;
+        font-weight: 400;
+        margin: 5px;
+        width: fit-content;
+        @include md {
+          font-size: 30px;
+        }
+        @include lg {
+        	font-size: 35px;
+        }
+        @include cust(1200) {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .precios{
+    font-size: 18px;
+    &__bg-purple {
+    	background-color: $purple;
+    	font-weight: 400;
+    	margin: 5px;
+    	width: fit-content;
+    	padding: 6px;
+      transform: rotate(-2deg);
+
+    	span {
+    		font-weight: bold;
+    	}
+    }
+    .horarios {
+      .border-yellow {
+      	border-bottom: solid 1px yellow;
+        width: fit-content;
+        margin: 0 auto;
+        padding-bottom: 6px;
+      }
+      .dias {
+        margin-top: 4px;
+      }
+    }
+    @include md {
+    	font-size: 20px;
+    }
+    @include lg {
+    	font-size: 25px;
+    }
+  }
+  &__form {
+    &__logo {
+      .logo {
+        max-width: 150px;
+        margin: 0 auto;
+        @include md {
+        	max-width: 220px;
+        }
+      }
+    }
+    &__form {
+      padding-bottom: 100px;
+    }
+  }
+  @include md {
+
+  }
+  @include lg {
+    max-width: 1100px;
+  	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.mkp-hero-flex {
+  justify-content: center;
+  padding-top: 15px;
+}
+
+
+
+
+
+.mkp-duracion {
+  max-width: 1100px;
+  &__header {
+    .text-float {
+      display: inline;
+      max-width: 200px;
+    }
+  }
+  &__content{
+    @include md {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item{
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.mkp-teens-section {
+  background-image: url('assets/img/banner-teens-dgr.png');
+  background-size: cover;
+  background-position: center;
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include md {
+    background-size: contain;
+  }
+
+}
+
+.mkp-teens {
+  max-width: 1100px;
+  &__content{
+    padding: 10px 15px;
+    margin: 0 auto;
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__content__text {
+    font-size: 20px;
+  }
+
+  .is-bg-purple{
+    background-color: $purple;
+    font-weight: 400;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 6px 10px;
+  }
+}
+
+.mkp-visitas-section{
+  background-image: url('assets/img/visitas-elements.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mkp-visitas{
+  &__content {
+    &__titulo{
+      font-size: 20px;
+    }
+  	// &__circulos {
+  	// 	display: flex;
+    //   flex-wrap: wrap;
+  	// 	max-width: 850px;
+  	// 	margin: 0 auto;
+    //   padding: 15px;
+    //   &__item {
+    //     width: 100%;
+    //   }
+  	// }
+    &__circulos {
+      text-align: center;
+    }
+  }
+  &__logo {
+  	max-width: 150px;
+    margin: 0 auto;
+  }
+}
+
+.mkp-footer-section {
+  background-color: $blue;
+}
+
+.mkp-footer {
+  max-width: 1100px;
+  &__content {
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 10px;
+    }
+    &__text {
+      &__logo {
+        max-width: 150px;
+        margin: 0 auto;
+        @include md {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.mk-footer-trademark {
+  background: rgba(0, 81, 240, 0.9);
+
+}
+.trade-mark__container {
+  max-width: 1100px;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 11px;
+  color:#bebdc0;
+  text-align: center;
+  p{
+    margin: 1px;
+  }
+}

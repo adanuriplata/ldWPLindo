@@ -1,0 +1,12 @@
+.container {
+  max-width: $max-display-width;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.mkp-section {
+  @include md{
+    margin: 50px 20px;
+  }
+
+}
